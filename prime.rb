@@ -5,4 +5,3 @@ prime_array = []
     else
       return false
 end
-
