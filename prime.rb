@@ -1,8 +1,10 @@
 def prime?(n)
-for d in 2..(n-1)
-  if (n%d) == 0
-    return false
+  return false if n < 2
+  (2..n - 1).each do |d|
+    if (n % d) == 0
+      return false
+    end
   end
+  true
 end
-true
-end
+
